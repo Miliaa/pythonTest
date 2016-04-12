@@ -1,0 +1,24 @@
+#Ett enkelt program som kommer att skriva ut hello world
+#för att kommentera saker används # och du behöver inga {}
+#using simple print
+print("Hello World using just print")
+
+#now we are going to use function/methods
+
+def helloWorld(): #här skapar vi funktionen
+	print("Hello World using a method")
+
+#här under kallar vi på funktionen sedan
+helloWorld()
+
+#nu ska vi skriva ut hello world 3 gånger med en for loop
+#detta kommer att loopa 5 gånger, då den går från 0 till 5
+print("\n") # kommer ge oss 2 rader i terminalen
+for i in range(0,5):
+	helloWorld()
+
+#nu kör vi en while loop
+i = int(1)
+while i < 10:
+	helloWorld()
+	i += 1

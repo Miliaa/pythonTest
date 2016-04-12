@@ -1,26 +1,7 @@
-#Imports
-import time
-import os
-import sys
+#En väldigt enkle miniräknare skrivet i python'
+#Denna täcker väldigt basic saker metoder, if-satser, loopar, enkelt matte, samt input och output
 
-#Exemple 1 metod och loopar
-print("Ex1: Metoder")
-def helloWorld():
-	print("Hello world")
-
-for i in range(0, 5):
-	helloWorld()
-
-#Exemple 2 input och metod
-print("\nEx2: Input")
-def printApple(apple):
-	print(apple, " apple")
-
-printApple(input("Skriv: "))
-
-#Exemple 3 enkel miniräknare
-print("\nEx3: Miniräknare")
-
+#methods
 def add(tal1, tal2):
 	return tal1 + tal2
 
@@ -65,9 +46,10 @@ def menu():
 		else:
 			sys.exit() #kills the script
 
-
 		#stannar tråden i 5 sek
 		time.sleep(5) #för denna behövs import time se överst
 		#tömmer terminal fönstret
 		os.system('cls') #för denna behöver import os se överst
+
+#start call
 menu()
